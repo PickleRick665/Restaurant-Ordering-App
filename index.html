@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+    <title>Restaurant Ordering App</title>
+</head>
+<body>
+    <header>
+        <!-- <img src="/images/burger-background.jpg" class="burger-background-class"> -->
+        <h1>Jimmy's Diner</h1>
+        <p>The best burgers and pizzas in town.</p>
+    </header>
+
+    <section id="menu-items-section" class="menu-items-section">
+
+    </section>
+
+    <section id="order-details" class="order-details hidden">
+        <h2>Your order</h2>
+
+        <div id="order-items"> 
+
+        </div>
+        
+        <hr>
+
+        <div id="price-container">
+
+        </div>
+
+        <button id="order-button" class="order-button">Complete Order</button>
+    </section>
+
+    <dialog id="payment-modal" class="payment-modal">
+        <form class="card-details-form" method="dialog">
+            <h2>Enter card details</h2>
+            
+            <input type="text" placeholder="Enter your name" id="customer-name"required>
+            <input type="text" placeholder="Enter card number" required>
+            <input type="text" placeholder="Enter CVV" required>
+
+            <button class="pay-button" id="pay-button">Pay</button>
+        </form>
+
+    </dialog>
+
+    <script src="index.js" type="module"></script>
+</body>
+</html>
